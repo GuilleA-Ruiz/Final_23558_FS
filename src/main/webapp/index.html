@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aries Souvenir's</title>
+  <link rel="icon" type="image/png" href="Img/logo_aries.png">
+
+  <script src="https://kit.fontawesome.com/fae5ac15d7.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- body -->
+
+<body class="body"></body>
+<!-- header/barra de navegación -->
+<!-- logo y marca -->
+<header style="margin-top: 0; width: 100%; position: fixed; top: 0; z-index: 11;">
+  <nav class="navbar navbar-expand-sm " style="background-color: blue;">
+    <nav class="navbar" style="background-color: blue;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h3 class="marca"><img src="Img/logo_aries.png" alt="Logo" width="me-auto" height="80"
+              class="d-inline-block"> ARIES Souvenir's</h3>
+              <input id="checkitem" type="checkbox" onclick="enableDarkMode()">
+        </a>
+      </div>
+    </nav>
+
+      <!-- modo oscuro -->
+
+
+    <!-- navegación y botón -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#conocenos"
+            style="font-weight: bold; color: antiquewhite;">Conocenos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#trabajos" style="font-style: italic; color:antiquewhite">Nuestros trabajos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#promos" style="font-style: italic; color:antiquewhite">Promos vigentes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#redes" style="font-style: italic; color:antiquewhite">Nuestras redes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pedidos.html"
+            style="color: purple; background-color: aqua; font-style: italic;border-radius: 5px; font-weight: bold;">Hacé
+            tu pedido</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="vistas/login.jsp" style="color: aqua; background-color: purple; font-style: normal; border-radius: 5px; font-weight: bold;">LOGIN</a>  
+        </li>
+    </div>
+  </nav>
+</header>
+
+<!-- sección nosotros -->
+<section id="conocenos">
+  <h3 class="titSec">Conocenos</h3>
+  <h2 class="tit">ARIES souvenirs</h2>
+  <p class="referencias">Somos fabricantes artesanales en el rubro souvenirs. Con más de 15 años de experiencia en el
+    rubro. Realizamos pedidos personalizados y con amplia variedad para que puedas completar tu fiesta, reunión,
+    despedida o agasajo.
+  </p>
+</section>
+<!-- carrousel -->
+<div class="container">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item  active">
+        <img src="Img/mesa 1.jpg" class="img-fluid d-block mx-auto" style="width: auto; height: 500px;"
+          alt="Mesa armada 1">
+        <h5 style="text-align-last: center">Cumpleaños infantiles y adultos</h5>
+      </div>
+      <div class="carousel-item ">
+        <img src="Img/mesa 2.jpg" class="img-fluid d-block mx-auto" style="width: auto; height: 500px;"
+          alt="Mesa armada 2">
+        <h5 style="text-align-last: center">Baby Showers, Comuniones</h5>
+      </div>
+      <div class="carousel-item ">
+        <img src="Img/mesa 3.jpg" class="img-fluid d-block mx-auto" style="width: auto; height: 500px;"
+          alt="Mesa armada 3">
+        <h5 style="text-align-last: center">15 y 18 años, Casamiento, Divorcios</h5>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<!-- grilla con trabajos -->
+<div id="trabajos"></div>
+<h3 class="titSec">Nuestros Trabajos</h3>
+<div class="grilla">
+  <div class="cajas1">
+    <img src="Img/souvenirs.jpg" alt="foto de souvenires" class="fotoGrilla">
+    <button class="botones"><a class="nav-link" href="pedidos.html">Souvenirs</a></button>
+  </div>
+  <div class="cajas2">
+    <img src="Img/centro de mesa.jpg" alt="foto de centros de mesa" class="fotoGrilla">
+    <button class="botones"><a class="nav-link" href="pedidos.html">Centros de mesa</a></button>
+  </div>
+  <div class="cajas3">
+    <img src="Img/deco mesas.jpg" alt="foto de decoración de mesas" class="fotoGrilla">
+    <button class="botones"><a class="nav-link" href="pedidos.html">Deco para mesas</a></button>
+  </div>
+  <div class="cajas4">
+    <img src="Img/nombre.jpg" alt="foto nombres con o sin luces" class="fotoGrilla">
+    <button class="botones"><a class="nav-link" href="pedidos.html">Nombres con o sin luces</a></button>
+  </div>
+  <div class="cajas5">
+    <img src="Img/deco torta.jpg" alt="foto de adornos de tortas" class="fotoGrilla">
+    <button class="botones"><a class="nav-link" href="pedidos.html">Adornos para tortas</a></button>
+  </div>
+  <div class="cajas6">
+    <img src="Img/book.jpg" alt="foto de book" class="fotoGrilla">
+    <button class="botones"><a class="nav-link" href="pedidos.html">Selfies / Books</a></button>
+  </div>
+  <div>
+      <br>
+    <a href="vistas/verSouvenirs.jsp"
+       style="background-color: blueviolet; color: gold; padding: 20px 30px; font-family: cursive ; font-size: 130%; text-decoration: none; position: relative; border: none; border-radius: 5em; cursor: pointer; margin: 10px 0;">
+        Ver más Souvenires
+    </a>
+  </div>  
+</div>
+
+
+<!-- cuadro promo del mes -->
+<div id="promos">
+</div>
+<h3 class="titSec">Promos Vigentes</h3>
+<div class="containerPromo">
+  <div class="promoActual">
+    <img src="Img/fotoPromo.jpg" alt="foto promo del mes" class="fotoPromo">
+  </div>
+  <div class="textoPromo">
+    <h3>Señando a partir de 15 veladores con el 50% de su valor, congelás el precio y te llevás el central de regalo
+    </h3>
+    <h2>RESERVÁ TU DISEÑO!!!</h2>
+  </div>
+    
+</div>
+
+<!-- pie de pg (redes) -->
+<footer class="footer">
+  <div>
+    <h2 class="logoFooter"><img src="Img/logo_aries.png" alt="Logo" width="me-auto" height="80"
+        class="d-inline-block"> MdQ-2023</h2>
+    <h2 id="redes" class="redes">Redes</h2>
+  </div>
+  <div>
+    <a href="https://www.facebook.com/ARIESsouvenirs" target="_blank">
+      <i class="fa-brands fa-facebook fa-xl"></i>face</a>
+    <a href="https://www.instagram.com/aries_souvenirs" target="_blank">
+      <i class="fa-brands fa-instagram fa-xl"></i>insta</a>
+    <a href="https://api.whatsapp.com/send/?phone=5492234368698&text=Hola!!%20hace%20tu%20consulta,%20y%20en%20breve%20nos%20comunicaremos.%20Gracias!!"
+      target="_blank">
+      <i class="fa-brands fa-whatsapp fa-xl"></i>whats</a>
+  </div>
+</footer>
+
+<!-- js boostrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!-- modo oscuro -->
+<script src="script.js"></script>
+
+</body>
+
+</html>
